@@ -1,6 +1,8 @@
 # THE BEAST MASTER
 The Beast Master is a simple system for recording what versions and when pieces of software are deployed to a given environment, and linking them back to Github. The Beast Master is eco-friendly, written minimally in Ruby 1.9.2/Sinatra and uses the local file system to store its records so needs no database. The Beast Master is red. 
 
+<img src="http://mcdowall.info/john/blog/images/figures/thebeastmaster.png" />
+
 ## INSTALATION
 Make sure you have bundler installed. Clone this repo. Then, at the command line:
 
