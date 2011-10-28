@@ -3,15 +3,18 @@ The Beast Master is a simple system for recording what versions and when pieces 
 
 ## INSTALATION
 Make sure you have bundler installed. Then, at the command line:
+
     bundle 
 
 You can try it out with the simple command (make sure to check out the configuration in the config directory FIRST):
+
     rackup
 
 And then hitting the URL that rackup spins up, usually http://localhost:9292/
 
 ## TESTS
 I welcome you to run them. Here's how:
+
     rspec
 
 SimpleCov will run when you run the tests. Check the coverage report in the coverage directory/ 
