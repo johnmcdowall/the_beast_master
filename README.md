@@ -48,6 +48,8 @@ The idea is that you would call The Beast Master after a deploy has successfuly 
 
     curl -d "env=production&project=killer_project&sha=e8500d38bfeb296e080f728710445101cd54884f&whom=john" http://localhost:9292/mark_release
 
+You should see your release marked up on the dashboard when you hit the root URL in a browser.
+
 ## CONTRIBUTING TO THE BEAST MASTER
 I warmly welcome friendly pull requests.
 
