@@ -1,0 +1,27 @@
+development:
+  release_db_path: release_db
+  github_base_url: https://github.com/<you or your org>
+  use_auth: false
+  auth_username: admin
+  auth_password: admin
+
+test:
+  release_db_path: spec/release_db
+  github_base_url: https://github.com/<you or your org>
+  use_auth: false
+  auth_username: admin
+  auth_password: admin
+
+staging:
+  release_db_path: release_db
+  github_base_url: https://github.com/<you or your org>
+  use_auth: false
+  auth_username: admin
+  auth_password: admin
+
+production:
+  release_db_path: release_db
+  github_base_url: https://github.com/<you or your org>
+  use_auth: false
+  auth_username: admin
+  auth_password: admin

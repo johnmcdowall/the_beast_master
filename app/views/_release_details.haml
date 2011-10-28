@@ -1,0 +1,11 @@
+- present :release, release_details do |rp|
+  %ul.info
+    %li 
+      %h4= rp.get_release_project
+    %li 
+      %p.date= rp.get_release_date
+      %p.date= rp.get_release_time 
+    %li
+      %a{:href => rp.get_release_github_url, :class=>"sha" }=rp.get_release_sha
+      %p.whom= rp.get_release_deployer
+  

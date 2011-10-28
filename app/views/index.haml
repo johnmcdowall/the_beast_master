@@ -1,0 +1,9 @@
+#environments
+  - present :deploy do |dp|
+    - if not dp.has_environments?
+      %h2.message No Environments have had any releases yet :(
+    - dp.get_environment_list.each do |env|
+      %h2.subheader= dp.format_environment env
+      %ul
+        - dp.get_releases_for_environment(env).each do |release|
+          %li= haml :_release_details, :locals=>{:release_details=>release}

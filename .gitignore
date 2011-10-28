@@ -1,0 +1,4 @@
+.DS_Store
+release_db/
+coverage/
+config/the_beast_master_config.yml
