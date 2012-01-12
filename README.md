@@ -23,25 +23,31 @@ SimpleCov will run when you run the tests. Check the coverage report in the cove
 
 ## USAGE
 The Beast Master responds to only two URLs:
-* / (GET) - This loads the release dashboard
-* /mark_release_for (POST) - This records a release for an environment and expects the following parameters as part of the POST:
 
+* ```/ (GET) - This loads the release dashboard```
+* ```/mark_release_for (POST)``` - This records a release for an environment and expects the following parameters as part of the POST:
+
+```
     env      - the environment name, e.g. 'production', 'staging'
     project  - the project name, e.g. 'my_awesome_project'
     whom     - the name of the person deploying
     sha      - the SHA1 of the commit being deployed
+```
 
 No spaces are allowed in any of the parameters. 
 
 Don't forget to pass along any credentials if you turn the auth on in the config. 
 
 ## CONFIGURATION
-There's a sample config file in the config directory called the_beast_master_config.yml.sample. Current options are:
+There's a sample config file in the config directory called ```the_beast_master_config.yml.sample```. Current options are:
+
+```
   release_db_path: The location in the file system where The Beast Master will store its records
   github_base_url: https://github.com/<you or your org>
   use_auth: false/true
   auth_username: admin or whatever
   auth_password: admin or whatever
+```
 
 ## EXMAPLES
 The idea is that you would call The Beast Master after a deploy has successfuly completed. If you want to fake it to test it out, use curl like so:
